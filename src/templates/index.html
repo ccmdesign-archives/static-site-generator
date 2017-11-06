@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1>Static Site Generator</h1>
+
+    <p>Project page: <a href="https://github.com/ccmdesign/static-site-generator.git">https://github.com/ccmdesign/static-site-generator.git</a></p>
+
+    <h2>Directory structure</h2>
+
+    <ul>
+      <li>├─ images/</li>
+      <li>├─ js/</li>
+      <li>├─ scss/</li>
+      <li>├─ templates/</li>
+      <li class="indent">│<span>├─ layouts/</span></li>
+      <li class="indent">│<span>└─ partials/</span></li>
+      <li>└─ data.json</li>
+    </ul>
+
+    <p><span class="code">images/</span>: Image files.</p>
+    <p><span class="code">js/</span>: Javascript files.</p>
+    <p><span class="code">scss/</span>: SASS files.</p>
+    <p><span class="code">templates/</span>: Nunjucks templates.</p>
+    <p><span class="code">templates/layouts/</span>: Nunjucks templates you want to extend.</p>
+    <p><span class="code">templates/partial/</span>: Nunjucks templates you want to include.</p>
+    <p><span class="code">data.json</span>: JSON file with the data you want to be available in the templates.</p>
+  </div>
+{% endblock %}
