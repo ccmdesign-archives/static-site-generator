@@ -1,6 +1,23 @@
 Static Site Generator
 =====================
 
+Running locally
+---------------
+
+1. Install the dependencies:
+
+```
+npm install
+```
+
+2. Start the server and watch for changes:
+
+```
+gulp
+```
+
+3. Visit `http://localhost:3000`
+
 Directory structure
 -------------------
 
@@ -34,6 +51,6 @@ Gulp tasks
 
 `gulp serve`: (Default) Starts the server and watch files changes.
 
-`gulp build`: Builds project for production.
+`gulp build`: Builds project for production (requires [ImageMagick](http://www.imagemagick.org/script/index.php) to be installed).
 
 `gulp clean`: Deletes the `dist` folder.
